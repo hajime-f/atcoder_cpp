@@ -2,8 +2,13 @@
 using namespace std;
 
 int main() {
-
-
+  
+  string s;
+  cin >> s;
+  
+  int T = s.size();
+  cout << s[((T + 1) / 2) - 1] << endl;
+  
   return 0;
 }
 

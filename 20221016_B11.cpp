@@ -27,5 +27,5 @@ int main() {
 // cin >> N >> X;
 // for (int i = 1; i <= N; i++)  cin >> A[i];
 
-// int pos = lower_bound(A + 1, A + (N + 1), X[j]) - A;
+// int pos = lower_bound(A + 1, A + (N + 1), X[j]) - A;  // 二分探索
 
