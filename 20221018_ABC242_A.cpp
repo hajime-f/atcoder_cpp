@@ -3,15 +3,22 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
-  
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  int A, B, C, X;
+  cin >> A >> B >> C >> X;
+
+  double p;
+
+  if (X <= A) {
+    p = 1;
+  } else if ((A + 1 <= X) && (X <= B)) {
+    p = (double)C / (double)(B - A);
+  } else {
+    p = 0;
+  }
+  cout << p << endl;
   
   return 0;
+  
 }
 
 // cin >> N >> X;

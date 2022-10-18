@@ -3,15 +3,19 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
+  long long N;
+  cin >> N;
   
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  long long M = (long long)1 << 31;
+  
+  if (-M <= N && N < M) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
   
   return 0;
+  
 }
 
 // cin >> N >> X;

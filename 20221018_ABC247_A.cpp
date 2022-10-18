@@ -3,15 +3,18 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
+  string S;
+  cin >> S;
   
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  S[3] = S[2];
+  S[2] = S[1];
+  S[1] = S[0];
+  S[0] = '0';
+  
+  cout << S << endl;
   
   return 0;
+  
 }
 
 // cin >> N >> X;

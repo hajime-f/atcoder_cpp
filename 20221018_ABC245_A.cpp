@@ -3,15 +3,21 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
-  
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  int A, B, C, D;
+  cin >> A >> B >> C >> D;
+
+  if (A < C)  cout << "Takahashi" << endl;
+  else if (A > C)  cout << "Aoki" << endl;
+  else {
+    if (B < D)  cout << "Takahashi" << endl;
+    else if (B > D)  cout << "Aoki" << endl;
+    else {
+      cout << "Takahashi" << endl;
+    }
+  }
   
   return 0;
+  
 }
 
 // cin >> N >> X;

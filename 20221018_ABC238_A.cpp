@@ -3,15 +3,17 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
-  
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  long n;
+  cin >> n;
+
+  if (n * log(2) > 2 * log(n)) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
   
   return 0;
+  
 }
 
 // cin >> N >> X;

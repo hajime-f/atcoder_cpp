@@ -3,15 +3,14 @@ using namespace std;
 
 int main() {
 
-  string s;
-  cin >> s;
+  long double H;
+  cin >> H;
   
-  if (s[0] != s[1] && s[1] == s[2])  cout << s[0] << endl;
-  else if (s[0] != s[1] && s[1] != s[2])  cout << s[1] << endl;
-  else if (s[0] == s[1] && s[1] != s[2])  cout << s[2] << endl;
-  else cout << -1 << endl;
+  long double horizon = sqrt(H * (12800000 + H));
+  printf("%12Lf\n", horizon);
   
   return 0;
+  
 }
 
 // cin >> N >> X;
