@@ -3,7 +3,18 @@ using namespace std;
 
 int main() {
 
+  string S;
+  cin >> S;
+
+  string M = "";
   
+  for (int i = 0; i < 6; i++) {
+    M += S;
+    if (M.size() == 6) {
+      cout << M << endl;
+      return 0;
+    }
+  }
   
   return 0;
   

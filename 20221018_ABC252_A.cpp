@@ -3,7 +3,12 @@ using namespace std;
 
 int main() {
 
+  int N;
+  cin >> N;
   
+  string s = "abcdefghijklmnopqrstuvwxyz";
+  
+  cout << s[N - 97] << endl;
   
   return 0;
   

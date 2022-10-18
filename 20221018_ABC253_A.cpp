@@ -3,7 +3,18 @@ using namespace std;
 
 int main() {
 
+  int a, b, c;
+  cin >> a >> b >> c;
   
+  int d[3];
+  d[0] = a;
+  d[1] = b;
+  d[2] = c;
+
+  sort(d, d + 3);
+
+  if (d[1] == b)  cout << "Yes" << endl;
+  else  cout << "No" << endl;
   
   return 0;
   
