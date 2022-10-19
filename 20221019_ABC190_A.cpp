@@ -2,8 +2,45 @@
 using namespace std;
 
 int main() {
-
   
+  int A, B, C;
+  cin >> A >> B >> C;
+
+  string s;
+  
+  if (C == 0) {
+    while (true) {
+      if (A > 0) {
+        A -= 1;
+      } else {
+        s = "Aoki";
+        break;
+      }
+      if (B > 0) {
+        B -= 1;
+      } else {
+        s = "Takahashi";
+        break;
+      }
+    }
+  } else {
+    while (true) {
+      if (B > 0) {
+        B -= 1;
+      } else {
+        s = "Takahashi";
+        break;
+      }
+      if (A > 0) {
+        A -= 1;
+      } else {
+        s = "Aoki";
+        break;
+      }
+    }
+  }
+
+  cout << s << endl;
   
   return 0;
   
