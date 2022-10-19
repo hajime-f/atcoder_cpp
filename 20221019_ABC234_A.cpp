@@ -1,25 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+long func(int t) {
+  return pow(t, 2) + 2 * t + 3;
+}
+
+
 int main() {
 
-  int L1, R1, L2, R2;
-  cin >> L1 >> R1 >> L2 >> R2;
+  int t;
+  cin >> t;
 
-  int M = 0;
-
-  if (L2 < L1) {
-    swap(L1, L2);
-    swap(R1, R2);
-  }
-  
-  if (R1 > L2) {
-    M = (R2 - L2) - (R1 - L1) + 1;
-  } 
-
-  cout << M << endl;
+  cout << func(func(func(t) + t) + func(func(t))) << endl;
   
   return 0;
+  
 }
 
 // cin >> N >> X;

@@ -3,23 +3,16 @@ using namespace std;
 
 int main() {
 
-  int L1, R1, L2, R2;
-  cin >> L1 >> R1 >> L2 >> R2;
+  string S;
+  cin >> S;
 
-  int M = 0;
+  int a = (int)(S[0] - '0');
+  int b = (int)(S[2] - '0');
 
-  if (L2 < L1) {
-    swap(L1, L2);
-    swap(R1, R2);
-  }
-  
-  if (R1 > L2) {
-    M = (R2 - L2) - (R1 - L1) + 1;
-  } 
-
-  cout << M << endl;
+  cout << a * b << endl;
   
   return 0;
+  
 }
 
 // cin >> N >> X;

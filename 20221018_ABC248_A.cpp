@@ -8,7 +8,7 @@ int main() {
 
   int A[9];
   for (int i = 0; i < 9; i++) {
-    A[i] = (int)S[i] - '0';
+    A[i] = (int)(S[i] - '0');
   }
 
   sort(A, A + 9);

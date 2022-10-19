@@ -3,23 +3,13 @@ using namespace std;
 
 int main() {
 
-  int L1, R1, L2, R2;
-  cin >> L1 >> R1 >> L2 >> R2;
+  int D;
+  cin >> D;
 
-  int M = 0;
-
-  if (L2 < L1) {
-    swap(L1, L2);
-    swap(R1, R2);
-  }
-  
-  if (R1 > L2) {
-    M = (R2 - L2) - (R1 - L1) + 1;
-  } 
-
-  cout << M << endl;
+  cout << (double)D / (double)100 << endl;
   
   return 0;
+  
 }
 
 // cin >> N >> X;
