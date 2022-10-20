@@ -2,8 +2,13 @@
 using namespace std;
 
 int main() {
-
   
+  string S;
+  cin >> S;
+
+  int n = S.size();
+  if (S[n - 1] != 's')  cout << S + 's' << endl;
+  else  cout << S + "es" << endl;
   
   return 0;
   
@@ -16,7 +21,4 @@ int main() {
 
 // sort(A + 1, A + (N + 1));  // ソート
 
-// vector<int> vec;  // ベクターの宣言（１次元）
-
-// vector< vector<int> > a(N);  // ベクターの宣言（２次元）
-// a[i] = vector<int>(L);
+// vector<int> vec;  // ベクターの宣言

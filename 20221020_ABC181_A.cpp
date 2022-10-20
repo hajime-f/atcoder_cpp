@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
-
   
+  int N;
+  cin >> N;
+
+  if (N % 2 == 0)  cout << "White" << endl;
+  else  cout << "Black" << endl;
   
   return 0;
   
@@ -16,7 +20,4 @@ int main() {
 
 // sort(A + 1, A + (N + 1));  // ソート
 
-// vector<int> vec;  // ベクターの宣言（１次元）
-
-// vector< vector<int> > a(N);  // ベクターの宣言（２次元）
-// a[i] = vector<int>(L);
+// vector<int> vec;  // ベクターの宣言
