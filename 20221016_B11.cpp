@@ -29,3 +29,6 @@ int main() {
 
 // int pos = lower_bound(A + 1, A + (N + 1), X[j]) - A;  // 二分探索
 
+// sort(A + 1, A + (N + 1));  // ソート
+
+
