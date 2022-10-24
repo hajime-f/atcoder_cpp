@@ -3,26 +3,32 @@ using namespace std;
 
 int main() {
   
-  int N;
-  cin >> N;
+  int N, K;
+  cin >> N >> K;
 
-  vector<vector<int>> a(N);
+  int A[100], C[100];
   for (int i = 0; i < N; i++) {
-    a[i] = vector<int>(i + 1);
-    for (int j = 0; j <= i; j++) {
-      if (j == 0 || j == i)  a[i][j] = 1;
-      else {
-        a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
+    cin >> A[i];
+    C[i] = A[i];
+  }
+  
+  int B[100];
+  for (int j = 0; j < K; j++)  cin >> B[j];
+  
+  sort(C, C + N);
+  int max_value = C[N - 1];
+  
+  for (int i = 0; i < N; i++) {
+    if (A[i] != max_value)  continue;
+    for (int j = 0; j < K; j++) {
+      if (B[j] == i) {
+        cout << "Yes" << endl;
+        return 0;
       }
     }
   }
 
-  for (int i = 0; i < N; i++) {
-    for (int j = 0; j <= i; i++) {
-      cout << a[i][j] << " ";
-    }
-    cout << endl;
-  }
+  cout << "No" << endl;
   
   return 0;
   
